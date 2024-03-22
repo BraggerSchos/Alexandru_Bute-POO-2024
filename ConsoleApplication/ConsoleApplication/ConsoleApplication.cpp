@@ -43,14 +43,14 @@ int main()
         cin >> prenume;
         strcpy_s(persoane[i].nume, 20, nume);
         strcpy_s(persoane[i].prenume, 20, prenume);
-        Console::WriteLine("Introduceti varsta persoaeni {0} ", i + 1);
+        Console::WriteLine("Introduceti varsta persoaeni {0}: ", i + 1);
         unsigned vs;
         cin >> vs;
         persoane[i].vs = vs;
     }
     Console::WriteLine("Introduceti numele persoanelor si varstale aferente: "); //Specific Visual C++ / CLI
     for (int i = 0; i < nr_persoane; i++) {
-        cout << persoane[i].nume <<" "<< persoane[i].prenume << "\t" << persoane[i].vs << endl;
+        cout << persoane[i].nume << " " << persoane[i].prenume << "\t" << persoane[i].vs << endl;
         }
     Console::ReadKey(); //Mentinem fereastra deschisa
 }   
