@@ -36,7 +36,8 @@ int main()
     int nr_carti;
     cin >> nr_carti;
     Carte* carti = new Carte[nr_carti];
-    for (int i = 0; i < nr_carti; i++) {
+    for (int i = 0; i < nr_carti; i++) 
+    {
         Console::WriteLine("Introduceti titlul cartii {0}: ", i + 1);
         char nume[20];
         cin >> nume;
